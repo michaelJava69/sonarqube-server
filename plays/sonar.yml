@@ -3,8 +3,8 @@
   become: true
   roles:
     - role: jdauphant.ssl-certs
-      ssl_certs_local_cert_data: "{{vault_cert_data}}"
-      ssl_certs_local_privkey_data: "{{vault_privkey_data}}"
+   #   ssl_certs_local_cert_data: "{{vault_cert_data}}"
+   #   ssl_certs_local_privkey_data: "{{vault_privkey_data}}"
     - role: jdauphant.nginx
       nginx_configs:
         ssl:
