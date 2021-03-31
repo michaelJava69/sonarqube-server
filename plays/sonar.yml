@@ -25,7 +25,8 @@
     - name: Install Java 8 & PostgreSQL
       package: name={{item}} state=present
       with_items:
-        - oracle-java8-installer
+        - openjdk-8-jre-headless
+       # - oracle-java8-installer
         - postgresql
         - postgresql-contrib
         - unzip
